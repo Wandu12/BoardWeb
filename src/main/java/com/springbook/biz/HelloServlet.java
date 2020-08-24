@@ -8,6 +8,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class HelloServlet extends HttpServlet {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7782716754374115610L;
+
 	public HelloServlet() {
 		System.out.println("==> HelloServlet 객체 생성");
 	}
