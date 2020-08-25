@@ -1,15 +1,22 @@
 package com.springbook.biz;
 
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
 public class TVUser {
 	public static void main(String[] args) {
-		//SamsungTV tv = new SamsungTV();
-		//TV tv = new LgTV();
-		//TV tv = new SamsungTV();
-		BeanFactory factory = new BeanFactory();
-		TV tv = (TV)factory.getBean(args[0]); //명령행 매개변수 전달
+		//1. Spring Container 구동
+		AbstractApplicationContext factory =
+				new GenericXmlApplicationContext("applicationContext.xml");
+		
+		//2. Spring Container로부터 필요한 객체를 요청(lookup)
+		TV tv = (TV)factory.getBean("tv");
 		tv.powerOn();
 		tv.volumeUp();
 		tv.volumeDown();
 		tv.powerOff();
+		
+		//3. Spring Container 종료
+		factory.close();
 	}
 }

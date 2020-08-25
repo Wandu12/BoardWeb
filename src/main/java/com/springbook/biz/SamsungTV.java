@@ -1,6 +1,10 @@
 package com.springbook.biz;
 
-public class SamsungTV {
+public class SamsungTV implements TV{
+	public SamsungTV() {
+		System.out.println("===>Samsung TV 객체 생성");
+	}
+	
 	public void powerOn() {
 		System.out.println("SamsungTV--- 전원 켬");
 	}
