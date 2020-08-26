@@ -6,5 +6,6 @@
 	<import resource="context-datasource.xml"/>
 	<import resource="context-transaction.xml"/>
 
-	<bean id="tv" class="com.springbook.biz.SamsungTV"></bean>
+	<bean id="tv" class="com.springbook.biz.SamsungTV" init-method="initMethod"
+	destroy-method="destroyMethod" lazy-init="true"/>
 </beans>
