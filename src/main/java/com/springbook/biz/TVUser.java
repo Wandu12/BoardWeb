@@ -10,11 +10,13 @@ public class TVUser {
 				new GenericXmlApplicationContext("applicationContext.xml");
 		
 		//2. Spring Container로부터 필요한 객체를 요청(lookup)
-		TV tv = (TV)factory.getBean("tv");
-		tv.powerOn();
+		TV tv1 = (TV)factory.getBean("tv");
+		TV tv2 = (TV)factory.getBean("tv");
+		TV tv3 = (TV)factory.getBean("tv");
+/*		tv.powerOn();
 		tv.volumeUp();
 		tv.volumeDown();
-		tv.powerOff();
+		tv.powerOff();*/
 		
 		//3. Spring Container 종료
 		factory.close();
