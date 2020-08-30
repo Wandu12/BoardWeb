@@ -1,11 +1,11 @@
 package com.springbook.biz;
 
-public class SamsungTV implements TV{
+public class SamsungTV  implements TV{
 	private SonySpeaker speaker;
 	
 	public SamsungTV() {
 		System.out.println("===>Samsung TV 객체 생성");
-	}
+	} 
 /*	
 	public void initMethod() {
 		System.out.println("객체 초기화 작업 처리...");
