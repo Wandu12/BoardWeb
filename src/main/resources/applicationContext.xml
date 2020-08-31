@@ -7,5 +7,5 @@
 		<constructor-arg ref="sony" />
 	</bean>
 	  
-	<bean id="sony" class="com.springbook.biz.SonySpeaker"></bean>
+	<bean id="sony" class="com.springbook.biz.SonySpeaker"/>
 </beans>
