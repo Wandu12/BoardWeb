@@ -24,7 +24,7 @@ public class SamsungTV implements TV{
 	}
 
 	public SamsungTV(Speaker speaker, int price) {
-		System.out.println("===> SamsungTV(2) 객체 생성");
+		System.out.println("===> SamsungTV(3) 객체 생성");
 		this.speaker = speaker;
 		this.price = price;
 	}
