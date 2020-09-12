@@ -28,6 +28,24 @@ public class BoardVO {
 		this.cnt = cnt;
 	}
 	
+	public int getSeq() {
+		return seq;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public String getWriter() {
+		return writer;
+	}
+	public String getContent() {
+		return content;
+	}
+	public Date getRegDate() {
+		return regDate;
+	}
+	public int getCnt() {
+		return cnt;
+	}
 	@Override
 	
 	public String toString() {
