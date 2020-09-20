@@ -1,4 +1,4 @@
-package com.springbook.board;
+package com.springbook.biz.board;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
